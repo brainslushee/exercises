@@ -1,0 +1,5 @@
+def parrot_trouble(talking, hour):
+  if talking == True and hour not in range (7,21):
+    return True
+  else:
+    return False

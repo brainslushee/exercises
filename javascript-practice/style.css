@@ -1,0 +1,31 @@
+/* {
+  border: solid 1px black;
+}*/
+.cell {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: solid 1px black;
+  margin: 0 auto;
+}
+.container {
+  max-width: 432px;
+  max-height: 500px;
+  margin: 0 auto;
+  border: solid red 5px;
+  border-radius: 10px;
+  padding: .1em;
+}
+.colored {
+  background-color: green;
+}
+#clear {
+  padding: 1em;
+}
+#button-div {
+  text-align: center;
+  margin-bottom: 2em;
+}
+h1 {
+  text-align: center;
+}
