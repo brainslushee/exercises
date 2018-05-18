@@ -1,0 +1,12 @@
+def count_substring(string, sub_string):
+    new_string = []
+    counter = 0
+    try:
+        for i in range(0, len(string)):
+            new_string.append(string[i:len(sub_string)+i])
+    except IndexError:
+        pass
+    for i in range(0, len(new_string)):
+        if new_string[i] == sub_string:
+            counter += 1
+    return counter

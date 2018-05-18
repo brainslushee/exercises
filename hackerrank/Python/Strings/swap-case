@@ -1,0 +1,12 @@
+def swap_case(s):
+    s = s.split()
+    changed = []
+    for i in range(0, len(s)):
+        for letter in s[i]:
+            if letter.isupper() == True:
+                changed.append(letter.lower())
+            else:
+                changed.append(letter.upper())
+        changed.append(" ")
+    del changed[-1]
+    return ''.join(changed)

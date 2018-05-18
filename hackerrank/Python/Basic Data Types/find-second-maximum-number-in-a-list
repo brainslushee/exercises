@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    
+    main_list = list(arr)
+    main_list.sort()
+    main_list.reverse()
+    final = []
+    for i in range(0, len(main_list)):
+        if main_list[0] > main_list[i]:
+            final.append(main_list[i])
+        else:
+            pass
+    print(final[0])
+        

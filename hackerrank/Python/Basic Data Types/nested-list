@@ -1,0 +1,26 @@
+if __name__ == '__main__':
+    
+    students = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        
+        students.append([name,score])
+    def takeSecond(elem):
+        return elem[1]
+    students.sort(key=takeSecond)
+    second_lowest = []
+    true_second_lowest=[]
+    for i in range(0,len(students)):
+        if students[i][1] > students[0][1]:
+            second_lowest.append(students[i])
+        else:
+            pass
+    for i in range(0,len(second_lowest)):
+        if second_lowest[i][1] == second_lowest[0][1]:
+            true_second_lowest.append(second_lowest[i])
+        else:
+            pass
+    true_second_lowest.sort()
+    for i in range(0,len(true_second_lowest)):
+        print(true_second_lowest[i][0])
